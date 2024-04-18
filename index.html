@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Example Form</title>
+
+    
+    <link rel="stylesheet" href="form_style.css" />
+    <link rel="stylesheet" href="custom_notification.css" />
+
+  </head>
+  <body>
+    <section class="container">
+      <header>Example Registration Form</header>
+
+      <!-- Form Stat Here -->
+      <form action="#" class="form" name="example form"> <!-- IMPORTANT : Open a name tag and give a name to the form -->
+        
+        <!-- In Every Input Variables you should need to add a name for that input otherwise it will not read in google sheet -->
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" name="Name" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" name="Email" placeholder="Enter email address" required />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input type="number" name="Mobile Number" placeholder="Enter phone number" required />
+          </div>
+
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input type="date"  name="Birth Date" placeholder="Enter birth date" required />
+          </div>
+        </div>
+
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" checked />
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">prefer not to say</label>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="input-box address">
+          <label>Address</label>
+          <input type="text" name="Address" placeholder="Enter street address" required />
+          <input type="text" placeholder="Enter street address line 2" required />
+          <div class="column">
+            
+            <!-- In your form if there is a drop down menu you should assign a name for select variable and assign names to all the option from value tag -->
+            <div class="select-box">
+              <select name="Country">
+                <option hidden>Country</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Japan">Japan</option>
+                <option value="India">India</option>
+                <option value="Nepal">Nepal</option>
+              </select>
+            </div>
+
+            <input type="text" name="City" placeholder="Enter your city" required />
+          </div>
+
+          <div class="column">
+            <input type="text" name="Region" placeholder="Enter your region" required />
+            <input type="number" name="Postal Code" placeholder="Enter postal code" required />
+          </div>
+
+        </div>
+
+        <button type="submit" value="submit">Submit</button>
+
+      </form>
+    </section>
+
+    
+    <div id="notification" class="notification"></div>
+
+    <div id="errornotification" class="errornotification"></div>
+      
+
+  <!-- Call the java script file that connect form and Google Sheet -->
+  <script src="connect_googlesheet.js"></script>
+
+  </body>
+</html>
