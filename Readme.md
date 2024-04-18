@@ -119,9 +119,10 @@ function doPost (e) {
 }
 ```
 
-    - Deploy the Web App - Click on the disk icon to save your Apps Script project. - To deploy your web app, click on Deploy > New Deployment. - Choose Deployment Type: Select Web app. - Project Version: Select New if deploying for the first time. - Execute as: Choose your Google account (typically, yourself). - Who has access: Choose Anyone or Anyone within your organization. - Click Deploy.
 
-    - Access Your Web App After deployment, you will receive a URL for your web app. Copy that web app URL and copy that you created javacript code. For your Understand its on `const scriptURL = 'YOUR GOOGLE SCRIPT WEB APP URL';` this line
+- Deploy the Web App - Click on the disk icon to save your Apps Script project. - To deploy your web app, click on Deploy > New Deployment. - Choose Deployment Type: Select Web app. - Project Version: Select New if deploying for the first time. - Execute as: Choose your Google account (typically, yourself). - Who has access: Choose Anyone or Anyone within your organization. - Click Deploy.
+
+- Access Your Web App After deployment, you will receive a URL for your web app. Copy that web app URL and copy that you created javacript code. For your Understand its on `const scriptURL = 'YOUR GOOGLE SCRIPT WEB APP URL';` this line
 
 
 
